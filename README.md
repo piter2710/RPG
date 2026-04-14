@@ -9,7 +9,7 @@ The AI (powered by Google Gemini) acts as your **Dungeon Master (DM)**. It descr
 
 The **Python Backend** acts as the strict, uncompromising Game Engine. It holds the absolute truth: your health, your stats, your inventory, and your quest journal. 
 
-## How it works (The Magic Behind the Screen)
+## How it works
 When you tell the AI what you want to do (e.g., "I swing my sword at the goblin!"), the AI looks at the situation and decides what skill you are using and if there are any narrative modifiers. For example, if you are fighting in knee-deep mud, the AI might give you a -2 modifier to agility. 
 
 The AI then secretly sends these modifiers to the backend engine to perform a **dice roll (like in Dungeons & Dragons or Baldur's Gate 3)**. The backend does the math, updates your HP, checks if you died (triggering a game-over database wipe), or adds newly found loot to your actual inventory slots. Finally, the AI streams the story result back to your screen.
